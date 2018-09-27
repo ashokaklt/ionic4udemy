@@ -1,11 +1,40 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>todo</ion-title>
+    <ion-buttons slot="end">
+      <app-menu></app-menu>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-button color="danger" fill="outline" shape="round">Add Todo</ion-button>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size=12 size-lg=3 size-md=4 size-sm=6 size-xs=12 *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1,1]; let i = index">
+        <ion-card >
+          <ion-img width="80" height="80" src="/assets/arrahman.jpg"></ion-img>
+          <ion-card-content>
+            <ion-card-title>Ashok</ion-card-title>
+            <p> Ashok is learning ionic 4 and he needs to consistently practice. </p>
+
+          </ion-card-content>
+        </ion-card>-
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+ <!-- <ion-card *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1,1]; let i = index">
+    <ion-img width="80" height="80" src="/assets/arrahman.jpg"></ion-img>
+  <ion-card-content>
+    <ion-card-title>Ashok</ion-card-title>
+    <p> Ashok is learning ionic 4 and he needs to consistently practice. </p>
+
+  </ion-card-content>
+  </ion-card>-->
+  <!--<ion-button color="danger" fill="outline" shape="round">Add Todo</ion-button>
   <ion-fab vertical="top" horizontal="end" slot="fixed">
     <ion-fab-button>
       <ion-icon name="add"></ion-icon>
@@ -22,6 +51,6 @@
       </ion-label>
       <ion-badge slot="end" color="danger"><ion-icon name="trash"></ion-icon></ion-badge>
     </ion-item>
-  </ion-list>
+  </ion-list>-->
 
 </ion-content>
